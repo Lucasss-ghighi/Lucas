@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>VivíChaco • JustTravel</title>
+<meta name="description" content="VivíChaco - Agencia de turismo. Experiencias auténticas en la provincia del Chaco. JustTravel" />
+<style>
+  :root{
+    --bg:#fbfbfb; --card:#fff; --accent:#f05a28; --accent2:#f59b1f; --green:#3aa05b; --dark:#222;
+    --muted:#666; --maxw:1100px; --radius:12px; --gap:18px; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:linear-gradient(180deg,#ffffff 0%, #f7faf7 100%);color:var(--dark);line-height:1.5}
+  .wrap{max-width:var(--maxw);margin:28px auto;padding:22px}
+  header{display:flex;gap:18px;align-items:center}
+  .logo{width:92px;height:92px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+  /* REEMPLAZAR: si querés usar imagen real, comentar .logo y usar <img> en su lugar */
+  h1{margin:0;font-size:28px}
+  p.lead{margin:6px 0 0;color:var(--muted)}
+  nav{margin-left:auto}
+  nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600}
+  .hero{display:grid;grid-template-columns:1fr 360px;gap:22px;margin-top:20px}
+  .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:0 6px 20px rgba(20,20,20,.04)}
+  .intro h2{margin:0 0 8px}
+  .colors{display:flex;gap:8px;margin-top:10px}
+  .sw{width:36px;height:36px;border-radius:8px;box-shadow:inset 0 -2px 0 rgba(0,0,0,.06)}
+  .sw.red{background:#e74c3c} .sw.orange{background:#f39c12} .sw.yellow{background:#f1c40f} .sw.green{background:#2ecc71}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:14px}
+  .section{margin-top:20px}
+  h3{margin:0 0 8px}
+  ul{margin:0;padding-left:18px}
+  .foda-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .foda-item{padding:12px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfbfb);border:1px solid rgba(0,0,0,.03)}
+  .promo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .promo-item{padding:12px;text-align:center;border-radius:10px;background:#fff;border:1px solid rgba(0,0,0,.04)}
+  footer{margin-top:26px;padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff,#f9fbf9);text-align:center;color:var(--muted)}
+  .tiny{font-size:13px;color:var(--muted)}
+  .btn{display:inline-block;padding:8px 12px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+  /* responsive */
+  @media(max-width:900px){
+    .hero{grid-template-columns:1fr; }
+    .promo-grid{grid-template-columns:repeat(2,1fr)}
+    .grid2{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true">Vivi</div>
+      <div>
+        <h1>VivíChaco <span style="color:var(--accent);font-weight:700">•</span> <small style="font-weight:600;color:var(--muted)">JustTravel</small></h1>
+        <p class="lead">Experiencias auténticas de turismo aventura y cultura en la provincia del Chaco.</p>
+      </div>
+      <nav>
+        <a href="#quienes">Quiénes somos</a>
+        <a href="#foda">FODA</a>
+        <a href="#promo">Promos</a>
+      </nav>
+    </header>
+
+    <div class="hero" style="margin-top:18px">
+      <div class="card intro">
+        <h2 id="quienes">Quiénes somos</h2>
+        <p><strong>VivíChaco</strong> nace con la idea de que la gente no solo viaje, sino que viva una experiencia real e inolvidable en la provincia. Nuestro nombre es corto, fácil de recordar y transmite la invitación a vivir el Chaco.</p>
+
+        <div style="margin-top:12px">
+          <h3>Logo y colores</h3>
+          <p>El logo integra elementos de la naturaleza chaqueña y una paleta que expresa:</p>
+          <div class="colors">
+            <div class="sw red" title="Rojo: dinamismo y aventura"></div>
+            <div class="sw orange" title="Naranja: juventud e innovación"></div>
+            <div class="sw yellow" title="Amarillo: calidez y luz"></div>
+            <div class="sw green" title="Verde: naturaleza y respeto ambiental"></div>
+          </div>
+          <p class="tiny" style="margin-top:8px">La combinación comunica aventura, calidez y compromiso con el medio ambiente.</p>
+        </div>
+
+        <div style="margin-top:14px">
+          <h3>Misión</h3>
+          <p>Crear experiencias turísticas auténticas, simples, seguras y respetuosas con la naturaleza y las costumbres locales.</p>
+
+          <h3 style="margin-top:12px">Visión</h3>
+          <p>Ser una de las mejores agencias del norte argentino, destacando por mostrar el Chaco real: su naturaleza, cultura y gente.</p>
+        </div>
+
+        <div class="section">
+          <h3>Objetivos principales</h3>
+          <ul>
+            <li>Hacer que más gente se interese por viajar al Chaco.</li>
+            <li>Armar viajes divertidos que cuiden el medio ambiente.</li>
+            <li>Trabajar con personas y emprendedores locales para que la comunidad también se beneficie.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Inteligencia emocional</h3>
+          <p>Valoramos la empatía con clientes y guías. Capacitación al equipo para manejar emociones, comunicación positiva y resolución de conflictos para que cada experiencia sea cómoda y enriquecedora.</p>
+        </div>
+
+      </div>
+
+      <aside class="card">
+        <h3>Datos rápidos del Chaco</h3>
+        <p class="tiny">Posición: 25°–28° S • 58°–63° O. Superficie: 99.633 km². Población aprox. 1.142.000.</p>
+        <div style="margin-top:12px">
+          <h4 style="margin:0 0 6px">Principales regiones</h4>
+          <ul class="tiny" style="padding-left:18px;margin:0">
+            <li>Parques y sabanas secas</li>
+            <li>Pastizales y sabanas</li>
+            <li>Esteros, cañadas y bosques de ribera</li>
+            <li>Chaco leñoso</li>
+          </ul>
+        </div>
+        <div style="margin-top:12px">
+          <h4 style="margin:0 0 6px">Ríos principales</h4>
+          <p class="tiny" style="margin:0">Bermejo, Paraguay, Pilcomayo, Teuco, Paraná</p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- FODA -->
+    <div class="section card" id="foda">
+      <h2>FODA</h2>
+      <div class="foda-grid" style="margin-top:12px">
+        <div class="foda-item">
+          <h4>Fortalezas</h4>
+          <ul>
+            <li>Enfoque original: mostramos un Chaco real.</li>
+            <li>Promoción del ecoturismo y cuidado ambiental.</li>
+            <li>Conexión con comunidades y pueblos originarios.</li>
+            <li>Nombre y logo modernos y memorables.</li>
+          </ul>
+        </div>
+
+        <div class="foda-item">
+          <h4>Oportunidades</h4>
+          <ul>
+            <li>Crecimiento del turismo en El Impenetrable y zonas naturales.</li>
+            <li>Interés por viajes alternativos y naturales.</li>
+            <li>Difusión mediante redes sociales y códigos QR.</li>
+            <li>Alianzas con emprendedores locales.</li>
+          </ul>
+        </div>
+
+        <div class="foda-item">
+          <h4>Debilidades</h4>
+          <ul>
+            <li>Nueva en el mercado: falta de experiencia real.</li>
+            <li>Bajo presupuesto para grandes campañas.</li>
+            <li>Difícil competir con agencias ya establecidas.</li>
+          </ul>
+        </div>
+
+        <div class="foda-item">
+          <h4>Amenazas</h4>
+          <ul>
+            <li>Infraestructura turística limitada en ciertas zonas.</li>
+            <li>Riesgo de dañar el entorno si no se gestiona bien.</li>
+            <li>Competidores que replican ideas si se vuelven virales.</li>
+            <li>Clima extremo que puede afectar las salidas.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Promocionales -->
+    <div class="section card" id="promo">
+      <h2>Elementos promocionales</h2>
+      <p>Nuestra estrategia incluye merchandising y credenciales que cumplen funciones prácticas y promocionales.</p>
+
+      <div class="grid2">
+        <div>
+          <h3>Merchandising</h3>
+          <p>Gorras, remeras y bolsas reutilizables diseñadas con la identidad visual de VivíChaco. Funcionan como recuerdo y como publicidad móvil.</p>
+        </div>
+        <div>
+          <h3>Acreditaciones / Pases</h3>
+          <p>Identifican a cada viajero, facilitan el acceso y funcionan como souvenirs que se comparten en redes. Pueden incluir códigos para sorteos o entrega de materiales.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:12px" class="promo-grid">
+        <div class="promo-item">
+          <strong>Botellas térmicas</strong>
+          <p class="tiny">Mantienen la bebida a temperatura y se conservan como recuerdo útil del viaje.</p>
+        </div>
+        <div class="promo-item">
+          <strong>Llavero</strong>
+          <p class="tiny">Objeto económico y cotidiano, mantiene la marca presente a diario.</p>
+        </div>
+        <div class="promo-item">
+          <strong>Mochila exclusiva</strong>
+          <p class="tiny">Resistente y cómoda, es el compañero ideal de excursiones y refuerza la uniformidad visual del grupo.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Circuitos -->
+    <div class="section card">
+      <h2>Circuitos sugeridos (4 días)</h2>
+
+      <h4 style="margin-top:8px">Circuito tradicional</h4>
+      <ol>
+        <li>Llegada a Resistencia: city tour, esculturas y Museo del Hombre Chaqueño.</li>
+        <li>Parque Nacional Chaco: senderos guiados, centro de interpretación y picnic.</li>
+        <li>Parque Nacional El Impenetrable: senderos, río Bermejito y observación de fauna.</li>
+        <li>Puerto Barranqueras: paseo en lancha por el Paraná y regreso a aeropuerto.</li>
+      </ol>
+
+      <h4 style="margin-top:10px">Circuito creativo</h4>
+      <ol>
+        <li>Circuito de arte urbano por Resistencia y noche cultural en la costanera.</li>
+        <li>Colonia aborigen: talleres de artesanías y caminata guiada por los Tobas.</li>
+        <li>Kayak en río Negro y humedales con avistaje de aves.</li>
+        <li>Visita a producción regional: Caminos del algodón en Sáenz Peña.</li>
+      </ol>
+    </div>
+
+    <!-- Economía resumida -->
+    <div class="section card">
+      <h2>Economía local (resumen)</h2>
+      <p>Chaco combina agricultura (algodón, soja, girasol, maíz), ganadería bovina, actividad forestal y pesca fluvial. También hay actividad minera de materiales para la construcción y la industria textil ligada al algodón.</p>
+    </div>
+
+    <!-- Porter resumido -->
+    <div class="section card">
+      <h2>Análisis Porter (resumen)</h2>
+      <p>La competencia provincial es moderada: pocas agencias enfocadas en mostrar la cultura y naturaleza del Chaco, lo que nos permite diferenciarnos. Existe amenaza de nuevos competidores online; los clientes comparan precios; los proveedores (transporte y alojamientos) tienen poder de negociación; y hay sustitutos (viajar por cuenta propia o elegir destinos más conocidos).</p>
+    </div>
+
+    <!-- Infraestructura y conectividad -->
+    <div class="section card">
+      <h2>Infraestructura y conectividad</h2>
+      <ul>
+        <li>Rutas nacionales: 16, 95, 89 y 11 (conexión clave con Corrientes, Formosa y Santa Fe).</li>
+        <li>Puerto principal: Barranqueras (salida por Paraná).</li>
+        <li>Aeropuerto Internacional de Resistencia (vínculos con Bs.As., Córdoba y Rosario).</li>
+        <li>Ferrocarril de cargas: Belgrano Cargas (transporte de granos y madera).</li>
+      </ul>
+    </div>
+
+    <!-- Contacto / equipo -->
+    <div class="section card">
+      <h2>Equipo y contacto</h2>
+      <p>Integrantes: Silva, Criscuolo, Ghigliazza, Romero.</p>
+      <p>VivíChaco — JustTravel<br>Correo de contacto (ejemplo): <span style="color:var(--accent)">contacto@vivichaco.com</span></p>
+      <p class="tiny">Podés reemplazar este correo por el real al momento de publicar.</p>
+    </div>
+
+    <footer>
+      <p class="tiny">Esta página fue generada a partir de la presentación “Presentacion chaco 1911.pdf”. Diseñada para exposición escolar y promoción básica de VivíChaco.</p>
+      <p style="margin-top:8px"><a class="btn" href="#promo">Ver promociones</a></p>
+    </footer>
+  </div>
+
+  <script>
+    // Smooth scroll for nav
+    document.querySelectorAll('nav a').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
